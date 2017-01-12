@@ -1,0 +1,10 @@
+{
+  "name": "ArroundMe",
+  "app_id": "eb422afe",
+   "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://ibubble.in/"
+    }
+  ]
+}

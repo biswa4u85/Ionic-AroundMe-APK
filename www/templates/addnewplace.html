@@ -1,0 +1,42 @@
+<ion-view view-title="Add New Place">
+    <ion-content>
+    <form role="form" id="form" name="form" novalidate>
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Name *</span>
+                <input type="text" placeholder="Name *" ng-model="model.Name" ng-required="true">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Address *</span>
+                <input type="text" placeholder="Address *" ng-model="model.Address" ng-required="true" ng-blur="GetPlaceDetail()">
+            </label>
+            <button class="button button-full button-dark" ng-click="GotoAddPlaceMap()">
+                <i class="icon ion-location"></i> Mark Location on map
+            </button>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Email</span>
+                <input type="text" placeholder="Email" ng-model="model.Email">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Open hours *</span>
+                <input type="text" placeholder="Open hours *" ng-model="model.OpenHours">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Phone *</span>
+                <input type="tel" placeholder="Phone *" ng-model="model.Phone" ng-required="true">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Website</span>
+                <input type="text" placeholder="Website" ng-model="model.Website">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Photo</span>
+                <input type="text" placeholder="Photo" ng-model="model.Photo">
+            </label>
+            <button class="button button-full button-dark" ng-disabled="!form.$valid" ng-click="SavePlace(model, form)">
+                <i class="icon ion-location"></i> Save Place
+            </button>
+        </div>
+         </form>
+    </ion-content>
+</ion-view>

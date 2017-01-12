@@ -1,0 +1,22 @@
+<ion-view hide-nav-bar="true">
+    <div class="list list-inset" id="divPac">
+        <item class="item item-input">
+            <i class="icon ion-navicon-round placeholder-icon" ng-click="qwe()"></i>
+            <i class="icon ion-search placeholder-icon"></i> &nbsp;
+            <input type="text" ng-model="search" id="pac-input" placeholder="Search">
+            <a style="margin-right:3%;" ng-click="ClearSearch()"><i class="icon-right ion-android-close"></i></a>
+        </item>
+    </div>
+    <!-- <input type="text" ng-model="search" id="pac-input" placeholder="Search" ng-model="search"> -->
+    <ion-content scroll="false">
+        <!-- <div class="list list-inset" id="divPac">
+            <label class="item item-input">
+                <i class="icon ion-navicon-round placeholder-icon"></i>
+                <i class="icon ion-search placeholder-icon"></i> &nbsp;
+                <input type="text" ng-model="search" id="pac-input" placeholder="Search" ng-model="search">
+                <a href="javascript:clear()" style="margin-right:3%;"><i class="icon-right ion-android-close"></i></a>
+            </label>
+        </div> -->
+        <div id="map"></div>
+    </ion-content>
+</ion-view>
